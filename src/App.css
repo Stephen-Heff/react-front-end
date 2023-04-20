@@ -74,7 +74,6 @@ nav a:hover,
 .main-container {
   display: flex;
   justify-content: center;
-  flex-flow: row column wrap;
   padding-top: 4em;
   padding-bottom: 4.5em;
 }

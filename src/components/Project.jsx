@@ -20,7 +20,7 @@ export default function Project() {
           {projects.map((project) => (
             <li key={project.id}>
               <h2>{project.title}</h2>
-              <img src={project.image} alt="" srcset="" width="50%" />
+              <img src={project.image} width="50%" />
               <h3>{project.slug}</h3>
               <p>{project.content}</p>
 
