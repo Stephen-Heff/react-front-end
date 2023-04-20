@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 The application should be live at https://stephenheff-stephen-heff.vercel.app/
+
+
 In the project directory, you can run:
 
 ### `npm start`
