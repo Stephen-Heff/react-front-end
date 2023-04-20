@@ -90,7 +90,7 @@ nav a:hover,
   padding: 4em 2em 2em 2em;
 
   /* margin-top: 5%; */
-  flex-flow: row column wrap;
+  /* flex-flow: row column wrap; */
   /* max-width: 30em; */
 }
 
