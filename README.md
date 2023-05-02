@@ -3,6 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+The application should be live at http://www.stephenf.ca/
+
 
 In the project directory, you can run:
 
