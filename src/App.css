@@ -88,10 +88,6 @@ nav a:hover,
   border-radius: 10px;
   text-align: center;
   padding: 4em 2em 2em 2em;
-
-  /* margin-top: 5%; */
-  /* flex-flow: row column wrap; */
-  /* max-width: 30em; */
 }
 
 .text h1 {
@@ -266,7 +262,8 @@ header {
 .skill-container {
   display: flex;
   justify-content: space-evenly;
-  gap: 5em;
+  gap: 3em;
+  flex-flow: row wrap;
 }
 
 .skills h2 {
@@ -395,7 +392,307 @@ textarea {
   color: #f9feff;
   background: linear-gradient(-10deg, #728a92, #e1ced29c);
 
-  /* background-color: #041a21e9; */
   padding: 0.6em;
   border-radius: 0.5em;
 }
+
+/* ******************************************************************** */
+@media screen and (max-width: 48em) {
+  /* Change from 480px to 30em */
+
+  .mainheader {
+    padding: 3em 5em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ******************SKILLS******************************** */
+
+  .skill-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3em;
+    flex-flow: row wrap;
+  }
+}
+
+/* Apply these styles when the viewport is 768px or wider */
+@media screen and (max-width: 28em) {
+  /* Change from 768px to 48em */
+  .content-wrapper {
+    padding: 0 1.5em;
+  }
+
+  .mainheader {
+    padding: 3em 1.5em;
+    display: flex;
+    gap: 2em;
+    /* justify-content:space-evenly; */
+    align-items: center;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5em;
+    padding-bottom: 4.5em;
+  }
+  nav ul li {
+    display: flex;
+  }
+  nav ul li a {
+    padding: 0.2em 1.25em;
+    text-decoration: none;
+  }
+
+  .content img {
+    width: 250px;
+    border-radius: 100%;
+  }
+  .content {
+    background: linear-gradient(-10deg, #728a92, #e1ced29c);
+
+    border-radius: 10px;
+    text-align: center;
+    padding: em 2em 2em 2em;
+  }
+
+  .text h1 {
+    color: rgb(4, 26, 33);
+    padding-bottom: 0.1em;
+    font-size: 2.5em;
+  }
+  .text p {
+    padding-bottom: 1em;
+    font-size: 1.5em;
+  }
+
+  .text a {
+    color: #041a21;
+    background: linear-gradient(
+      -10deg,
+      rgb(114, 138, 146),
+      rgba(225, 206, 210, 0.612)
+    );
+    padding: 0.6em;
+    border-radius: 0.5em;
+  }
+  .text a:nth-child(4) {
+    color: #f9feff;
+    background-color: #041a21;
+    font-size: 1.1em;
+    padding: 0.6em 1.5em;
+  }
+
+  .icon {
+    font-size: 1.2em;
+    text-align: center;
+
+    margin-bottom: 2em;
+  }
+  header {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .content {
+    animation: bounce 2s ease-in-out infinite;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  /* ******************ABOUT******************************** */
+
+  .about p {
+    font-size: 1.4em;
+    font-weight: 300;
+    padding: 1.5em;
+  }
+
+  /* ******************PROJECTS******************************** */
+
+  .projects p {
+    font-size: 1.4em;
+    font-weight: 300;
+    padding: 1.5em;
+  }
+
+  .livePage {
+    margin-top: 0em;
+  }
+
+  .livePage p a {
+    color: rgb(151, 151, 144);
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+
+  /* ******************EDUCATION******************************** */
+  .education {
+  }
+
+  .border {
+    padding: 2em;
+    border: 0.5em #e1ced29c solid;
+    border-radius: 2em;
+    margin-bottom: 2em;
+  }
+
+  /* ******************SKILLS******************************** */
+  .skill-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3.5em;
+    flex-flow: row wrap;
+    padding: 0 1.5em;
+  }
+
+  .skills h2 {
+    color: #041a21;
+    font-size: 2em;
+    padding-top: 2.5em;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+  .skills h3 {
+    color: #041a21;
+    font-size: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+
+  .skills p {
+    color: #041a21;
+    font-size: 1.4em;
+    padding: 0.5em 0 0.1em;
+  }
+
+  .skill-box {
+    text-align: center;
+    color: #041a21d0;
+  }
+
+  /* **********************CONTACT********************************************** */
+
+  .contact-flexbox {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .contact-section h2 {
+    color: #a79c9a;
+
+    font-size: 2em;
+    padding-top: 2.5em;
+    text-align: center;
+    background-color: #041a21d4;
+  }
+
+  .contact-flexbox {
+    color: #a79c9a;
+    font-size: 1.4em;
+    font-weight: 300;
+    padding: 3em 0;
+    background-color: #041a21d4;
+    font-weight: 300;
+    gap: 1em;
+  }
+
+  input {
+    border-radius: 0.2em;
+    height: 3em;
+    width: 40em;
+    background-color: #041a21;
+    color: #f9feff;
+  }
+  label {
+    display: block;
+    padding: 0.1em 0;
+  }
+  textarea {
+    background-color: #041a21;
+    width: 40em;
+    height: 15em;
+    margin-bottom: 1em;
+  }
+
+  .contact-flexbox ul {
+    padding: 4em 1em;
+
+    /* background-color: #423238; */
+    background: linear-gradient(-45deg, #03060c82, #423238cf);
+    border: 1px solid;
+    border-radius: 2em;
+  }
+
+  .contact-btn {
+    background-color: #ce996bf1;
+    color: #041a21;
+    padding: 0.5em 2em;
+    font-size: 0.9em;
+    border-radius: 0.3em;
+
+    cursor: pointer;
+  }
+
+  .footer {
+    padding: 3em 0;
+    background: linear-gradient(-10deg, #728a92, #e1ced29c);
+    color: #041a21;
+    text-align: center;
+  }
+  .f-icon {
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 1.5em;
+  }
+
+  .f-icon a {
+    color: #f9feff;
+    background-color: #041a21e9;
+    padding: 0.6em;
+    border-radius: 0.5em;
+  }
+
+  /* ***************************FOOTER******************************************** */
+  .footer {
+    padding: 2.5em 0em;
+    background: linear-gradient(-45deg, #041a21, #423238);
+    color: #f9feff;
+    text-align: center;
+  }
+  .f-icon {
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 1.5em;
+  }
+
+  .f-icon a {
+    color: #f9feff;
+    background: linear-gradient(-10deg, #728a92, #e1ced29c);
+
+    padding: 0.6em;
+    border-radius: 0.5em;
+  }
+}
+/* ******************************************************************** */

@@ -14,6 +14,9 @@ export default function Header() {
               <a href="#projects">Projects</a>
             </li>
             <li>
+              <a href="#education">Education</a>
+            </li>
+            <li>
               <a href="#skills">Skills</a>
             </li>
           </ul>
@@ -42,7 +45,7 @@ export default function Header() {
               >
                 <i className="fa-brands fa-linkedin"></i>
               </a>
-              <a href="mailto:stephenfolorunsho@hotmail.com" target="_blank">
+              <a href="mailto:folosstephen@gmail.com" target="_blank">
                 <i className="fa-solid fa-envelope"></i>
               </a>
             </div>
