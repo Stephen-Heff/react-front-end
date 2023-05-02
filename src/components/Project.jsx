@@ -14,7 +14,7 @@ export default function Project() {
 
   return (
     <section className="projects content-wrapper" id="projects">
-      <h2>My Work</h2>
+      <h2>My Projects</h2>
       <div>
         <ul>
           {projects.map((project) => (
