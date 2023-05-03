@@ -1,26 +1,56 @@
-export default function Header() {
+import React, { useState } from "react";
+
+function App() {
+  const [openMenu, setOpenMenu] = useState(false);
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+  };
   return (
     <header id="header">
       <div className="mainheader">
-        <a className="title-name" href="#">
-          Stephenf
-        </a>
-        <nav>
-          <ul>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#education">Education</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-          </ul>
-        </nav>
+        <div className="menuSeparator">
+          <a className="title-name" href="#">
+            Stephenf
+          </a>
+          <nav className="bigNav">
+            <ul>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#education">Education</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+            </ul>
+          </nav>
+          <button onClick={toggleMenu}>
+            <i class="fa-solid fa-bars" id="menu-toggle"></i>
+          </button>
+        </div>
+
+        {openMenu ? (
+          <nav className="phoneNav">
+            <ul>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#education">Education</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+            </ul>
+          </nav>
+        ) : null}
       </div>
 
       <div className="main-container" id="main-container">
@@ -55,3 +85,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default App;

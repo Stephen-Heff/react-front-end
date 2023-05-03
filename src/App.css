@@ -38,28 +38,54 @@ header {
 }
 .mainheader {
   padding: 3em 11em;
-  color: #f9feff;
+}
+
+/*==========================
+toggle navigation
+========================*/
+
+button {
+  display: none;
+  cursor: pointer;
+  background: transparent;
+  color: #728a92;
+  border: none;
+  font-size: 20px;
+}
+
+.menuSeparator {
+  padding: 3em 1em;
   display: flex;
   justify-content: space-between;
-
-  /* flex-flow: row column wrap; */
 }
 
 .title-name {
-  color: #f9feff;
+  font-size: 1.5em;
+  color: #728a92;
 }
 
-nav li {
+.bigNav {
+  text-align: center;
+}
+.bigNav li {
   display: inline-block;
 }
-nav li a {
+.bigNav li a {
   padding: 0.625em 1.25em;
   text-decoration: none;
-  color: #f9feff;
+  color: #728a92;
+}
+.phoneNav {
+  display: none;
+}
+.phoneNav li a {
+  padding: 0.625em 1.25em;
+  text-decoration: none;
+  color: #728a92;
 }
 
-nav a:hover,
-.title-name:hover {
+.bigNav a:hover,
+.phoneNav a:hover .title-name:hover {
   color: #913456;
 }
 @keyframes attention {
@@ -79,7 +105,7 @@ nav a:hover,
 }
 
 .content img {
-  width: 250px;
+  width: 15em;
   border-radius: 100%;
 }
 .content {
@@ -195,10 +221,18 @@ header {
 }
 .projects h3 {
   color: #041a21;
-  font-size: 1.3em;
-  padding-top: 2.5em;
+  font-size: 1.6em;
+  padding-top: 1em;
   padding-bottom: 1em;
   text-align: center;
+}
+.projects h4 {
+  color: #041a21;
+  font-size: 1.3em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  text-align: center;
+  font-weight: 500;
 }
 .projects p {
   font-size: 1.4em;
@@ -230,7 +264,7 @@ header {
   color: #041a21;
   font-size: 2em;
   padding-top: 2.5em;
-  padding-bottom: 1.5em;
+  padding-bottom: 1em;
 }
 .education h3 {
   color: #041a21;
@@ -397,13 +431,40 @@ textarea {
 }
 
 /* ******************************************************************** */
-@media screen and (max-width: 48em) {
-  /* Change from 480px to 30em */
-
+@media screen and (max-width: 52em) {
+  .content-wrapper {
+    padding: 0 5em;
+  }
   .mainheader {
     padding: 3em 5em;
+  }
+
+  button {
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    color: #728a92;
+    border: none;
+    font-size: 20px;
+  }
+
+  .phoneNav {
+    display: block;
+    padding-left: 73%;
+  }
+  .phoneNav li {
+    display: inline-block;
+  }
+
+  .bigNav {
+    display: none;
+  }
+  .phoneNav ul li {
     display: flex;
-    justify-content: space-between;
+  }
+  .phoneNav ul li a {
+    padding: 0.2em 1.25em;
+    text-decoration: none;
   }
 
   /* ******************SKILLS******************************** */
@@ -417,18 +478,40 @@ textarea {
 }
 
 /* Apply these styles when the viewport is 768px or wider */
-@media screen and (max-width: 28em) {
+@media screen and (max-width: 30em) {
   /* Change from 768px to 48em */
   .content-wrapper {
     padding: 0 1.5em;
   }
 
-  .mainheader {
-    padding: 3em 1.5em;
+  /*==========================
+toggle navigation
+========================*/
+
+  button {
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    color: #728a92;
+    border: none;
+    font-size: 20px;
+  }
+
+  .menuSeparator {
+    padding: 2em 0em;
     display: flex;
-    gap: 2em;
-    /* justify-content:space-evenly; */
-    align-items: center;
+  }
+
+  .title-name {
+    font-size: 1.3em;
+    color: #728a92;
+  }
+
+  .phoneNav {
+    padding-left: 73%;
+  }
+  .phoneNav li {
+    display: inline-block;
   }
 
   .main-container {
@@ -436,17 +519,22 @@ textarea {
     justify-content: center;
     padding-top: 0.5em;
     padding-bottom: 4.5em;
+    padding-left: 2em;
+    padding-right: 2em;
   }
-  nav ul li {
+  .bigNav {
+    display: none;
+  }
+  .phoneNav ul li {
     display: flex;
   }
-  nav ul li a {
+  .phoneNav ul li a {
     padding: 0.2em 1.25em;
     text-decoration: none;
   }
 
   .content img {
-    width: 250px;
+    width: 11.5em;
     border-radius: 100%;
   }
   .content {
@@ -454,7 +542,7 @@ textarea {
 
     border-radius: 10px;
     text-align: center;
-    padding: em 2em 2em 2em;
+    padding: 1em 2em 2em 2em;
   }
 
   .text h1 {
@@ -543,11 +631,10 @@ textarea {
     color: rgb(151, 151, 144);
     font-size: 0.9em;
     font-weight: 500;
+    padding: 0.2em 0.5em;
   }
 
   /* ******************EDUCATION******************************** */
-  .education {
-  }
 
   .border {
     padding: 2em;
@@ -596,7 +683,13 @@ textarea {
   .contact-flexbox {
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
+    color: #a79c9a;
+    font-size: 1.2em;
+    font-weight: 300;
+    padding: 3em 1.5em;
+    background-color: #041a21d4;
+    font-weight: 300;
+    gap: 1em;
   }
 
   .contact-section h2 {
@@ -606,16 +699,6 @@ textarea {
     padding-top: 2.5em;
     text-align: center;
     background-color: #041a21d4;
-  }
-
-  .contact-flexbox {
-    color: #a79c9a;
-    font-size: 1.4em;
-    font-weight: 300;
-    padding: 3em 0;
-    background-color: #041a21d4;
-    font-weight: 300;
-    gap: 1em;
   }
 
   input {
