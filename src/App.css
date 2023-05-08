@@ -431,7 +431,7 @@ textarea {
 }
 
 /* ******************************************************************** */
-@media screen and (max-width: 52em) {
+@media screen and (max-width: 51em) {
   .content-wrapper {
     padding: 0 5em;
   }
@@ -479,7 +479,7 @@ textarea {
 
 /* Apply these styles when the viewport is 768px or wider */
 @media screen and (max-width: 30em) {
-  /* Change from 768px to 48em */
+
   .content-wrapper {
     padding: 0 1.5em;
   }
@@ -548,11 +548,11 @@ toggle navigation
   .text h1 {
     color: rgb(4, 26, 33);
     padding-bottom: 0.1em;
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .text p {
     padding-bottom: 1em;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .text a {
