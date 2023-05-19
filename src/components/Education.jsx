@@ -20,7 +20,7 @@ export default function Education() {
           <li key={education.id} className="border">
             <img
               src={`https://laravel.stephenf.ca/storage/${education.image}`}
-              width="45%"
+              width="25%"
             />
             <h3>{education.title}</h3>
             <p>{education.description}</p>
