@@ -19,15 +19,18 @@ export default function Project() {
         <ul>
           {projects.map((project) => (
             <li key={project.id}>
-              <h3>{project.title}</h3>
-              <img src={project.image} width="50%" />
-              <h4>{project.slug}</h4>
-              <p>{project.content}</p>
-
-              <div className="livePage">
-                <p>
-                  <a href={project.url}>Live Page </a>
-                </p>
+              <div className="project-flex-container">
+                <img src={project.image} width="45%" />
+                <div className="project-flex-contents">
+                  <h3>{project.title}</h3>
+                  <h4>{project.slug}</h4>
+                  <p>{project.content}</p>
+                  <div className="livePage">
+                    <p>
+                      <a href={project.url}>Live Page </a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </li>
           ))}

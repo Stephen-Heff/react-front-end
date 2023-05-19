@@ -246,18 +246,29 @@ header {
   margin-top: 2em;
 }
 .livePage p a {
-  background: #041a21d3;
+  background: #a57d58;
   border-radius: 0.5em;
-  padding: 0.2em 2em;
-  color: rgb(151, 151, 144);
+  padding: 0.2em 1.2em;
+  color: rgba(245, 245, 245, 0.656);
   font-size: 1.2em;
   font-weight: 600;
 }
 .livePage p a:hover {
-  background: linear-gradient(-45deg, #728a92, #e1ced29c);
+  background: linear-gradient(-45deg, #5b6e75, #fc690e);
   color: #041a21d3;
 }
 
+.project-flex-container{
+  display: flex;
+  padding-bottom: 2em;
+}
+
+.project-flex-container img{
+  flex:50%;
+}
+.project-flex-contents{
+  flex: 50%;
+}
 /* ******************EDUCATION******************************** */
 
 .education h2 {
@@ -439,6 +450,10 @@ textarea {
     padding: 1em 5em;
   }
 
+  .project-flex-container{
+    display: block;
+  }
+
   button {
     display: block;
     cursor: pointer;
@@ -482,6 +497,10 @@ textarea {
   .content-wrapper {
     padding: 0 1.5em;
   }
+  .project-flex-container{
+    display: block;
+  }
+  
 
   /*==========================
 toggle navigation
@@ -627,7 +646,6 @@ toggle navigation
   }
 
   .livePage p a {
-    color: rgb(151, 151, 144);
     font-size: 0.9em;
     font-weight: 500;
     padding: 0.2em 0.5em;
