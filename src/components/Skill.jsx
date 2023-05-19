@@ -13,7 +13,7 @@ export default function Skill() {
         </div>
         <div className="skill-box col-lg-4">
           <i className="fa-brands fa-js  fa-4x"></i>
-          <h3 className="feature-title ">Javascript</h3>
+          <h3 className="feature-title ">JavaScript</h3>
         </div>
         <div className="skill-box col-lg-4">
           <i className="fa-brands fa-bootstrap fa-4x"></i>
@@ -25,11 +25,11 @@ export default function Skill() {
         </div>
         <div className="skill-box col-lg-4">
           <i className="fa-brands fa-node fa-4x"></i>
-          <h3 className="feature-title">Node</h3>
+          <h3 className="feature-title">Node.js</h3>
         </div>
         <div className="skill-box col-lg-4">
           <i className="fa-brands fa-php fa-4x"></i>
-          <h3 className="feature-title">PhP</h3>
+          <h3 className="feature-title">PHP</h3>
         </div>
         <div className="skill-box col-lg-4">
           <i className="fa-brands fa-laravel fa-4x"></i>
