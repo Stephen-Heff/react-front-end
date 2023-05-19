@@ -18,7 +18,10 @@ export default function Education() {
       <ul>
         {education.map((education) => (
           <li key={education.id} className="border">
-            <img src={education.image} width="50%" />
+            <img
+              src={`https://laravel.stephenf.ca/storage/${education.image}`}
+              width="45%"
+            />
             <h3>{education.title}</h3>
             <p>{education.description}</p>
           </li>
