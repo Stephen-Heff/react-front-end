@@ -444,7 +444,7 @@ textarea {
 /* ******************************************************************** */
 @media screen and (max-width: 51.25em) {
   .content-wrapper {
-    padding: 0 5em;
+    padding: 0 4em;
   }
   .mainheader {
     padding: 1em 5em;
