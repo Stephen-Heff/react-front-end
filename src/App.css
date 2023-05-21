@@ -274,6 +274,11 @@ header {
 .p-content-wrapper {
   padding: 0 7em;
 }
+
+.project-flex-container img {
+  width: 45%;
+}
+
 /* ******************EDUCATION******************************** */
 
 .education h2 {
@@ -476,6 +481,9 @@ textarea {
 
   .projects p {
     padding: 0.6em;
+  }
+  .project-flex-container img {
+    width: 60%;
   }
 
   button {

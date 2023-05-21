@@ -20,7 +20,7 @@ export default function Project() {
           {projects.map((project) => (
             <li key={project.id}>
               <div className="project-flex-container">
-                <img src={project.image} width="45%" />
+                <img src={project.image}  />
                 <div className="project-flex-contents">
                   <h3>{project.title}</h3>
                   <h4>{project.slug}</h4>
