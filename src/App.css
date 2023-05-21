@@ -183,8 +183,8 @@ header {
 .about h2 {
   color: #041a21;
   font-size: 2em;
-  padding-top: 2.5em;
-  padding-bottom: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   text-align: center;
 }
 
@@ -192,6 +192,7 @@ header {
   font-size: 1.4em;
   font-weight: 300;
   padding-top: 1.5em;
+  text-align: center;
 }
 
 .aboutImg {
@@ -215,8 +216,8 @@ header {
 .projects h2 {
   color: #041a21;
   font-size: 2em;
-  padding-top: 2.5em;
-  padding-bottom: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   text-align: center;
 }
 .projects h3 {
@@ -250,32 +251,36 @@ header {
   border-radius: 0.5em;
   padding: 0.2em 1.2em;
   color: rgba(245, 245, 245, 0.656);
-  font-size: 1.2em;
-  font-weight: 600;
+  font-size: 0.95em;
+  font-weight: 500;
 }
 .livePage p a:hover {
   background: linear-gradient(-45deg, #5b6e75, #fc690e);
   color: #041a21d3;
 }
 
-.project-flex-container{
+.project-flex-container {
   display: flex;
   padding-bottom: 2em;
+  gap: 10px;
 }
 
-.project-flex-container img{
-  flex:50%;
+.project-flex-container img {
+  flex: 40%;
 }
-.project-flex-contents{
-  flex: 50%;
+.project-flex-contents {
+  flex: 40%;
+}
+.p-content-wrapper {
+  padding: 0 7em;
 }
 /* ******************EDUCATION******************************** */
 
 .education h2 {
   color: #041a21;
   font-size: 2em;
-  padding-top: 2.5em;
-  padding-bottom: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 .education h3 {
   color: #041a21;
@@ -314,8 +319,8 @@ header {
 .skills h2 {
   color: #041a21;
   font-size: 2em;
-  padding-top: 2.5em;
-  padding-bottom: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   text-align: center;
 }
 .skills h3 {
@@ -442,16 +447,35 @@ textarea {
 }
 
 /* ******************************************************************** */
+
+/* TABLET VIEW */
 @media screen and (max-width: 51.25em) {
   .content-wrapper {
+    padding: 0 4em;
+  }
+
+  .p-content-wrapper {
     padding: 0 4em;
   }
   .mainheader {
     padding: 1em 5em;
   }
 
-  .project-flex-container{
+  .project-flex-container {
     display: block;
+  }
+
+  .projects h3 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  .projects h4 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  .projects p {
+    padding: 0.6em;
   }
 
   button {
@@ -492,15 +516,18 @@ textarea {
   }
 }
 
-/* Apply these styles when the viewport is 768px or wider */
+/* Apply these styles when the viewport is 768px or wider MOBILE VIEW */
 @media screen and (max-width: 30em) {
   .content-wrapper {
     padding: 0 1.5em;
   }
-  .project-flex-container{
+
+  .p-content-wrapper {
+    padding: 0 1.5em;
+  }
+  .project-flex-container {
     display: block;
   }
-  
 
   /*==========================
 toggle navigation
@@ -535,8 +562,8 @@ toggle navigation
   .main-container {
     display: flex;
     justify-content: center;
-    padding-top: 0.5em;
-    padding-bottom: 4.5em;
+    padding-top: 1em;
+    padding-bottom: 4.25em;
     padding-left: 2em;
     padding-right: 2em;
   }
@@ -560,7 +587,7 @@ toggle navigation
 
     border-radius: 10px;
     text-align: center;
-    padding: 3em 2em 2em 2em;
+    padding: 3em 1.5em 1.5em 1.5em;
   }
 
   .text h1 {
@@ -634,11 +661,32 @@ toggle navigation
   }
 
   /* ******************PROJECTS******************************** */
+  .projects h2 {
+    color: #041a21;
+    font-size: 2em;
+
+    text-align: center;
+  }
+  .projects h3 {
+    color: #041a21;
+    font-size: 1.6em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+  }
+  .projects h4 {
+    color: #041a21;
+    font-size: 1.3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-weight: 500;
+  }
 
   .projects p {
     font-size: 1.4em;
     font-weight: 300;
-    padding: 1.5em;
+    padding: 0.6em;
   }
 
   .livePage {
@@ -646,9 +694,13 @@ toggle navigation
   }
 
   .livePage p a {
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: 500;
     padding: 0.2em 0.5em;
+  }
+
+  .project-flex-container img {
+    width: 85%;
   }
 
   /* ******************EDUCATION******************************** */
@@ -672,8 +724,7 @@ toggle navigation
   .skills h2 {
     color: #041a21;
     font-size: 2em;
-    padding-top: 2.5em;
-    padding-bottom: 1em;
+
     text-align: center;
   }
   .skills h3 {
@@ -713,7 +764,6 @@ toggle navigation
     color: #a79c9a;
 
     font-size: 2em;
-    padding-top: 2.5em;
     text-align: center;
     background-color: #041a21d4;
   }

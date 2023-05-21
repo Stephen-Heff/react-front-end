@@ -13,7 +13,7 @@ export default function Project() {
   }, []);
 
   return (
-    <section className="projects content-wrapper" id="projects">
+    <section className="projects p-content-wrapper" id="projects">
       <h2>My Projects</h2>
       <div>
         <ul>
