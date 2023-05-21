@@ -224,13 +224,13 @@ header {
   color: #041a21;
   font-size: 1.6em;
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
   text-align: center;
 }
 .projects h4 {
   color: #041a21;
   font-size: 1.3em;
-  padding-top: 2em;
+  padding-top: 0.5em;
   padding-bottom: 1em;
   text-align: center;
   font-weight: 500;
@@ -263,6 +263,7 @@ header {
   display: flex;
   padding-bottom: 2em;
   gap: 10px;
+  align-items: center;
 }
 
 .project-flex-container img {
