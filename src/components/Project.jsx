@@ -19,7 +19,13 @@ export default function Project() {
       <h2>My Projects</h2>
       <div>
         {projects.length > 0 ? (
-          <Carousel showArrows={true} showThumbs={false}>
+          <Carousel
+            showArrows={true}
+            showThumbs={false}
+            autoPlay={true}
+            interval={6000}
+            infiniteLoop={true}
+          >
             {projects.map((project) => (
               <div key={project.id}>
                 <div className="project-flex-container">
