@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Project() {
   const [projects, setProjects] = useState([]);
@@ -16,25 +18,33 @@ export default function Project() {
     <section className="projects p-content-wrapper" id="projects">
       <h2>My Projects</h2>
       <div>
-        <ul>
-          {projects.map((project) => (
-            <li key={project.id}>
-              <div className="project-flex-container">
-                <img src={project.image}  />
-                <div className="project-flex-contents">
-                  <h3>{project.title}</h3>
-                  <h4>{project.slug}</h4>
-                  <p>{project.content}</p>
-                  <div className="livePage">
-                    <p>
-                      <a href={project.url}>Live Page </a>
-                    </p>
+        {projects.length > 0 ? (
+          <Carousel showArrows={true} showThumbs={false}>
+            {projects.map((project) => (
+              <div key={project.id}>
+                <div className="project-flex-container">
+                  <div className="project-img">
+                    <img src={project.image} alt={project.title} />
+                  </div>
+                  <div className="project-flex-contents">
+                    <h3>{project.title}</h3>
+                    <h4>{project.slug}</h4>
+                    <p>{project.content}</p>
+                    <div className="livePage">
+                      <p>
+                        <a href={project.url}>
+                          <i className="fa-brands fa-github" /> GitHub
+                        </a>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </li>
-          ))}
-        </ul>
+            ))}
+          </Carousel>
+        ) : (
+          <p>Loading projects...</p>
+        )}
       </div>
     </section>
   );

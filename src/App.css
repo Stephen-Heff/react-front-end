@@ -247,16 +247,17 @@ header {
   margin-top: 2em;
 }
 .livePage p a {
-  background: #a57d58;
+  background: black;
   border-radius: 0.5em;
   padding: 0.2em 1.2em;
-  color: rgba(245, 245, 245, 0.656);
+  color: white;
   font-size: 0.95em;
   font-weight: 500;
 }
 .livePage p a:hover {
-  background: linear-gradient(-45deg, #5b6e75, #fc690e);
-  color: #041a21d3;
+  /* background: linear-gradient(-45deg, #5b6e75, #fc690e); */
+  background-color: rgba(255, 255, 255, 0.573);
+  color: black;
 }
 
 .project-flex-container {
@@ -267,17 +268,17 @@ header {
 }
 
 .project-flex-container img {
-  flex: 40%;
+  flex: 30%;
 }
 .project-flex-contents {
-  flex: 40%;
+  flex: 30%;
 }
 .p-content-wrapper {
   padding: 0 7em;
 }
 
-.project-flex-container img {
-  width: 45%;
+.project-img {
+  width: 60%;
 }
 
 /* ******************EDUCATION******************************** */
@@ -483,7 +484,9 @@ textarea {
   .projects p {
     padding: 0.6em;
   }
-  .project-flex-container img {
+
+  .project-img {
+    margin: 0 auto;
     width: 60%;
   }
 
@@ -708,10 +711,10 @@ toggle navigation
     padding: 0.2em 0.5em;
   }
 
-  .project-flex-container img {
+  .project-img {
+    margin: 0 auto;
     width: 85%;
   }
-
   /* ******************EDUCATION******************************** */
 
   .border {
