@@ -191,7 +191,7 @@ header {
 .about p {
   font-size: 1.4em;
   font-weight: 300;
-  padding-top: 1.5em;
+  padding: 1.5em;
   text-align: center;
 }
 

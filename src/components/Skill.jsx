@@ -1,7 +1,7 @@
 export default function Skill() {
   return (
     <section className="skills skills-section content-wrapper" id="skills">
-      <h2 className="navbar-brand">Skills</h2>
+      <h2 className="navbar-brand">My Skills</h2>
       <div className="skill-container">
         <div className=" skill-box col-lg-4">
           <i className="fa-brands fa-html5 fa-4x"></i>

@@ -15,16 +15,16 @@ function App() {
           <nav className="bigNav">
             <ul>
               <li>
-                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
               </li>
               <li>
                 <a href="#education">Education</a>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <a href="#about">About</a>
               </li>
             </ul>
           </nav>
@@ -37,16 +37,16 @@ function App() {
           <nav className="phoneNav">
             <ul>
               <li>
-                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
               </li>
               <li>
                 <a href="#education">Education</a>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <a href="#about">About</a>
               </li>
             </ul>
           </nav>
