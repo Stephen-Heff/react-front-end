@@ -57,7 +57,7 @@ function App() {
         <div className="content">
           <img
             className="me"
-            src="me.png"
+            src="me2.png"
             alt="image of a black boy with headphones on coding on a laptop"
           />
 
