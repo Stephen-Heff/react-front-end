@@ -21,7 +21,7 @@ export default function Skill() {
         </div>
         <div className="skill-box col-lg-4">
           <i className="fa-brands fa-react fa-4x"></i>
-          <h3 className="feature-title ">React</h3>
+          <h3 className="feature-title ">React.js</h3>
         </div>
         <div className="skill-box col-lg-4">
           <i className="fa-brands fa-node fa-4x"></i>
