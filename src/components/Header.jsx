@@ -10,7 +10,7 @@ function App() {
       <div className="mainheader">
         <div className="menuSeparator">
           <a className="title-name" href="#">
-            Stephenf
+            stephenf
           </a>
           <nav className="bigNav">
             <ul>
