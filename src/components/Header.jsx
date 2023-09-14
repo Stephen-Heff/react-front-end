@@ -10,22 +10,22 @@ function App() {
       <div className="mainheader">
         <div className="menuSeparator">
           <a className="title-name" href="#">
-            Stephenf
+            StephenF
           </a>
           <nav className="bigNav">
             <ul>
+              {/* <li>
+                <a href="#about">About</a>
+              </li> */}
               <li>
                 <a href="#projects">Projects</a>
               </li>
               <li>
                 <a href="#skills">Skills</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#education">Education</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <button onClick={toggleMenu}>
@@ -36,18 +36,18 @@ function App() {
         {openMenu ? (
           <nav className="phoneNav">
             <ul>
+              {/* <li>
+                <a href="#about">About</a>
+              </li> */}
               <li>
                 <a href="#projects">Projects</a>
               </li>
               <li>
                 <a href="#skills">Skills</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#education">Education</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
+              </li> */}
             </ul>
           </nav>
         ) : null}
@@ -58,12 +58,12 @@ function App() {
           <img
             className="me"
             src="me2.png"
-            alt="image of a black boy with headphones on coding on a laptop"
+            alt="image of a black boy with headphones coding on a laptop"
           />
 
           <div className="text">
             <h1> Stephen Folorunsho</h1>
-            <p>Full-Stack Web Developer</p>
+            <p>Frontend Developer</p>
 
             <div className="icon">
               <a href="https://github.com/Stephen-Heff" target="_blank">

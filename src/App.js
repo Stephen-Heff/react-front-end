@@ -12,11 +12,11 @@ function App() {
     <div className="App">
       <Header />
       <main>
+        {/* <Main /> */}
         <Project />
         <Skill />
-        <Education />
-        <Main />
-        <Contact />
+        {/* <Education /> */}
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>
