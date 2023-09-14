@@ -25,7 +25,7 @@ body {
   font-size: 16px; /* Set the font size for the body element */
 }
 .content-wrapper {
-  padding: 0 15em;
+  padding: 0 15em 2em;
 }
 
 main {
@@ -302,6 +302,7 @@ header {
 
 .education {
   text-align: center;
+  /* padding-bottom: 3em; */
 }
 
 .break {
@@ -458,7 +459,7 @@ textarea {
 /* TABLET VIEW */
 @media screen and (max-width: 51.25em) {
   .content-wrapper {
-    padding: 0 4em;
+    padding: 0 4em 0.5em;
   }
 
   .p-content-wrapper {
@@ -531,7 +532,7 @@ textarea {
 /* Apply these styles when the viewport is 768px or wider MOBILE VIEW */
 @media screen and (max-width: 30em) {
   .content-wrapper {
-    padding: 0 1.5em;
+    padding: 0 1.5em 0.25em;
   }
 
   .p-content-wrapper {
