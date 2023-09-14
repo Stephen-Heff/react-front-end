@@ -23,9 +23,9 @@ function App() {
               <li>
                 <a href="#skills">Skills</a>
               </li>
-              {/* <li>
+              <li>
                 <a href="#education">Education</a>
-              </li> */}
+              </li>
             </ul>
           </nav>
           <button onClick={toggleMenu}>
@@ -45,9 +45,9 @@ function App() {
               <li>
                 <a href="#skills">Skills</a>
               </li>
-              {/* <li>
+              <li>
                 <a href="#education">Education</a>
-              </li> */}
+              </li>
             </ul>
           </nav>
         ) : null}
